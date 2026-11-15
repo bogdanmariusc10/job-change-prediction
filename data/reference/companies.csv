@@ -1,0 +1,13 @@
+company_group,search_term,name_pattern,linkedin_urns,layoffs_names
+Microsoft,"""Microsoft""",^microsoft\b,1035,Microsoft;LinkedIn;GitHub
+Google,"""Google""",^(google|alphabet|fitbit)\b,1441;1132117,Google;Alphabet;Waymo;Verily;Fitbit
+Amazon,"""Amazon""",^(amazon|aws)\b,1586;2382910,Amazon;AWS;Audible;Twitch;Zoox
+Meta,"(""Meta"" OR ""Facebook"")",^(meta|meta platforms|facebook)( inc\.?)?$,10667;76987811,Meta;Facebook;Instagram
+Apple,"""Apple""",^apple( inc\.?| romania)?$,162479,Apple
+Oracle,"""Oracle""",^oracle\b,1028,Oracle;Cerner
+IBM,"""IBM""",^(ibm\b|international business machines),1009,IBM;Red Hat
+Adobe,"""Adobe""",^adobe\b,1480,Adobe
+Intel,"""Intel""",^intel( corporation| romania| software and development cent(er|re))?$,1053,Intel;Mobileye
+SAP,"""SAP""",^sap( se| ag| romania| labs.*)?$,1115,SAP;SAP Labs
+Salesforce,"""Salesforce""",^salesforce\b,,Salesforce
+UiPath,"""UiPath""",^uipath\b,1523656,UiPath

@@ -1,0 +1,96 @@
+company_group,fiscal_year_end,employees,source_url,note
+Microsoft,2018-06-30,131000,https://www.sec.gov/Archives/edgar/data/789019/000156459018019062/msft-10k_20180630.htm,approximate; 10-K: 'approximately N people on a full-time basis'; read in 10-K; matches stockanalysis
+Microsoft,2019-06-30,144000,https://stockanalysis.com/stocks/msft/employees/,approximate; 10-K: 'approximately N people on a full-time basis'; from stockanalysis (compiled from 10-K)
+Microsoft,2020-06-30,163000,https://stockanalysis.com/stocks/msft/employees/,approximate; 10-K: 'approximately N people on a full-time basis'; from stockanalysis (compiled from 10-K)
+Microsoft,2021-06-30,181000,https://stockanalysis.com/stocks/msft/employees/,approximate; 10-K: 'approximately N people on a full-time basis'; from stockanalysis (compiled from 10-K)
+Microsoft,2022-06-30,221000,https://stockanalysis.com/stocks/msft/employees/,approximate; 10-K: 'approximately N people on a full-time basis'; from stockanalysis (compiled from 10-K)
+Microsoft,2023-06-30,221000,https://stockanalysis.com/stocks/msft/employees/,approximate; 10-K: 'approximately N people on a full-time basis'; from stockanalysis (compiled from 10-K)
+Microsoft,2024-06-30,228000,https://www.sec.gov/Archives/edgar/data/789019/000095017024087843/msft-20240630.htm,approximate; 10-K: 'approximately N people on a full-time basis'; read in 10-K; matches stockanalysis
+Microsoft,2025-06-30,228000,https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm,approximate; 10-K: 'approximately N people on a full-time basis'; read in 10-K; matches stockanalysis
+Google,2018-12-31,98771,https://www.sec.gov/Archives/edgar/data/1652044/000165204419000004/goog10-kq42018.htm,"Alphabet; 10-K: '98,771 full-time employees'; matches stockanalysis"
+Google,2019-12-31,118899,https://stockanalysis.com/stocks/googl/employees/,Alphabet; from stockanalysis (compiled from 10-K)
+Google,2020-12-31,135301,https://stockanalysis.com/stocks/googl/employees/,Alphabet; from stockanalysis (compiled from 10-K)
+Google,2021-12-31,156500,https://stockanalysis.com/stocks/googl/employees/,Alphabet; from stockanalysis (compiled from 10-K)
+Google,2022-12-31,190234,https://stockanalysis.com/stocks/googl/employees/,Alphabet; from stockanalysis (compiled from 10-K)
+Google,2023-12-31,182502,https://stockanalysis.com/stocks/googl/employees/,Alphabet; from stockanalysis (compiled from 10-K)
+Google,2024-12-31,183323,https://stockanalysis.com/stocks/googl/employees/,Alphabet; from stockanalysis (compiled from 10-K)
+Google,2025-12-31,190820,https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm,"Alphabet; 10-K: 'Alphabet had 190,820 employees'; matches stockanalysis"
+Amazon,2018-12-31,647500,https://www.sec.gov/Archives/edgar/data/1018724/000101872419000004/amzn-20181231x10k.htm,approximate; full-time and part-time employees; read in 10-K; matches stockanalysis
+Amazon,2019-12-31,798000,https://stockanalysis.com/stocks/amzn/employees/,approximate; full-time and part-time employees; from stockanalysis (compiled from 10-K)
+Amazon,2020-12-31,1298000,https://stockanalysis.com/stocks/amzn/employees/,approximate; full-time and part-time employees; from stockanalysis (compiled from 10-K)
+Amazon,2021-12-31,1608000,https://stockanalysis.com/stocks/amzn/employees/,approximate; full-time and part-time employees; from stockanalysis (compiled from 10-K)
+Amazon,2022-12-31,1541000,https://stockanalysis.com/stocks/amzn/employees/,approximate; full-time and part-time employees; from stockanalysis (compiled from 10-K)
+Amazon,2023-12-31,1525000,https://stockanalysis.com/stocks/amzn/employees/,approximate; full-time and part-time employees; from stockanalysis (compiled from 10-K)
+Amazon,2024-12-31,1556000,https://stockanalysis.com/stocks/amzn/employees/,approximate; full-time and part-time employees; from stockanalysis (compiled from 10-K)
+Amazon,2025-12-31,1576000,https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm,approximate; full-time and part-time employees; read in 10-K; matches stockanalysis
+Meta,2018-12-31,35587,https://www.sec.gov/Archives/edgar/data/1326801/000132680119000009/fb-12312018x10k.htm,exact headcount; read in 10-K; matches stockanalysis
+Meta,2019-12-31,44942,https://stockanalysis.com/stocks/meta/employees/,exact headcount; from stockanalysis (compiled from 10-K)
+Meta,2020-12-31,58604,https://stockanalysis.com/stocks/meta/employees/,exact headcount; from stockanalysis (compiled from 10-K)
+Meta,2021-12-31,71970,https://stockanalysis.com/stocks/meta/employees/,exact headcount; from stockanalysis (compiled from 10-K)
+Meta,2022-12-31,86482,https://stockanalysis.com/stocks/meta/employees/,exact headcount; from stockanalysis (compiled from 10-K)
+Meta,2023-12-31,67317,https://stockanalysis.com/stocks/meta/employees/,exact headcount; from stockanalysis (compiled from 10-K)
+Meta,2024-12-31,74067,https://stockanalysis.com/stocks/meta/employees/,exact headcount; from stockanalysis (compiled from 10-K)
+Meta,2025-12-31,78865,https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm,exact headcount; read in 10-K; matches stockanalysis
+Apple,2018-09-29,132000,https://www.sec.gov/Archives/edgar/data/320193/000032019318000145/a10-k20189292018.htm,FTE; approximate; 10-K: 'approximately N full-time equivalent employees'; read in 10-K; matches stockanalysis
+Apple,2019-09-28,137000,https://stockanalysis.com/stocks/aapl/employees/,FTE; approximate; 10-K: 'approximately N full-time equivalent employees'; from stockanalysis (compiled from 10-K)
+Apple,2020-09-26,147000,https://stockanalysis.com/stocks/aapl/employees/,FTE; approximate; 10-K: 'approximately N full-time equivalent employees'; from stockanalysis (compiled from 10-K)
+Apple,2021-09-25,154000,https://stockanalysis.com/stocks/aapl/employees/,FTE; approximate; 10-K: 'approximately N full-time equivalent employees'; from stockanalysis (compiled from 10-K)
+Apple,2022-09-24,164000,https://stockanalysis.com/stocks/aapl/employees/,FTE; approximate; 10-K: 'approximately N full-time equivalent employees'; from stockanalysis (compiled from 10-K)
+Apple,2023-09-30,161000,https://stockanalysis.com/stocks/aapl/employees/,FTE; approximate; 10-K: 'approximately N full-time equivalent employees'; from stockanalysis (compiled from 10-K)
+Apple,2024-09-28,164000,https://stockanalysis.com/stocks/aapl/employees/,FTE; approximate; 10-K: 'approximately N full-time equivalent employees'; from stockanalysis (compiled from 10-K)
+Apple,2025-09-27,166000,https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm,FTE; approximate; 10-K: 'approximately N full-time equivalent employees'; read in 10-K; matches stockanalysis
+Oracle,2018-05-31,137000,https://www.sec.gov/Archives/edgar/data/1341439/000119312518201034/d568983d10k.htm,approximate; full-time employees; read in 10-K; matches stockanalysis
+Oracle,2019-05-31,136000,https://stockanalysis.com/stocks/orcl/employees/,approximate; full-time employees; from stockanalysis (compiled from 10-K)
+Oracle,2020-05-31,135000,https://stockanalysis.com/stocks/orcl/employees/,approximate; full-time employees; from stockanalysis (compiled from 10-K)
+Oracle,2021-05-31,132000,https://stockanalysis.com/stocks/orcl/employees/,approximate; full-time employees; from stockanalysis (compiled from 10-K)
+Oracle,2022-05-31,143000,https://stockanalysis.com/stocks/orcl/employees/,approximate; full-time employees; from stockanalysis (compiled from 10-K)
+Oracle,2023-05-31,164000,https://stockanalysis.com/stocks/orcl/employees/,approximate; full-time employees; from stockanalysis (compiled from 10-K)
+Oracle,2024-05-31,159000,https://stockanalysis.com/stocks/orcl/employees/,approximate; full-time employees; from stockanalysis (compiled from 10-K)
+Oracle,2025-05-31,162000,https://www.sec.gov/Archives/edgar/data/1341439/000095017025087926/orcl-20250531.htm,approximate; full-time employees; read in 10-K; matches stockanalysis
+IBM,2018-12-31,350600,https://stockanalysis.com/stocks/ibm/employees/,approximate; from stockanalysis (compiled from filings); presumably IBM/wholly owned subsidiaries basis as in the annual report table (basis verified for 2025 only)
+IBM,2019-12-31,352600,https://stockanalysis.com/stocks/ibm/employees/,approximate; from stockanalysis (compiled from filings); presumably IBM/wholly owned subsidiaries basis as in the annual report table (basis verified for 2025 only)
+IBM,2020-12-31,345900,https://stockanalysis.com/stocks/ibm/employees/,approximate; from stockanalysis (compiled from filings); presumably IBM/wholly owned subsidiaries basis as in the annual report table (basis verified for 2025 only)
+IBM,2021-12-31,282100,https://stockanalysis.com/stocks/ibm/employees/,approximate; from stockanalysis (compiled from filings); presumably IBM/wholly owned subsidiaries basis as in the annual report table (basis verified for 2025 only); 2021 onward is after the Kyndryl spin-off (Nov 2021)
+IBM,2022-12-31,288300,https://stockanalysis.com/stocks/ibm/employees/,approximate; from stockanalysis (compiled from filings); presumably IBM/wholly owned subsidiaries basis as in the annual report table (basis verified for 2025 only)
+IBM,2023-12-31,282200,https://stockanalysis.com/stocks/ibm/employees/,approximate; from stockanalysis (compiled from filings); presumably IBM/wholly owned subsidiaries basis as in the annual report table (basis verified for 2025 only)
+IBM,2024-12-31,270300,https://stockanalysis.com/stocks/ibm/employees/,approximate; from stockanalysis (compiled from filings); presumably IBM/wholly owned subsidiaries basis as in the annual report table (basis verified for 2025 only)
+IBM,2025-12-31,264300,https://www.sec.gov/Archives/edgar/data/51143/000005114326000010/ibm-20251231_d2.htm,"approximate (annual report table in thousands: 264.3); IBM/wholly owned subsidiaries only, excludes 8.7k at less-than-wholly-owned subsidiaries and 13.8k complementary workforce; matches stockanalysis"
+Adobe,2018-11-30,21357,https://www.sec.gov/Archives/edgar/data/796343/000079634319000019/adbe10kfy18.htm,10-K: 'we employed N people'; matches stockanalysis
+Adobe,2019-11-29,22634,https://stockanalysis.com/stocks/adbe/employees/,from stockanalysis (compiled from 10-K)
+Adobe,2020-11-27,22516,https://stockanalysis.com/stocks/adbe/employees/,from stockanalysis (compiled from 10-K)
+Adobe,2021-12-03,25988,https://stockanalysis.com/stocks/adbe/employees/,from stockanalysis (compiled from 10-K)
+Adobe,2022-12-02,29239,https://stockanalysis.com/stocks/adbe/employees/,from stockanalysis (compiled from 10-K)
+Adobe,2023-12-01,29945,https://stockanalysis.com/stocks/adbe/employees/,from stockanalysis (compiled from 10-K)
+Adobe,2024-11-29,30709,https://stockanalysis.com/stocks/adbe/employees/,from stockanalysis (compiled from 10-K)
+Adobe,2025-11-28,31360,https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm,10-K: 'we employed N people'; matches stockanalysis
+Intel,2018-12-29,107400,https://www.sec.gov/Archives/edgar/data/50863/000005086319000007/a12292018q4-10kdocument.htm,"10-K: 'global workforce of 107,400' (no explicit as-of date; fiscal year ended Dec 29, 2018); matches stockanalysis"
+Intel,2019-12-28,110800,https://stockanalysis.com/stocks/intc/employees/,from stockanalysis (compiled from 10-K); likely includes Mobileye (basis verified only for 2025)
+Intel,2020-12-26,110600,https://stockanalysis.com/stocks/intc/employees/,from stockanalysis (compiled from 10-K); likely includes Mobileye (basis verified only for 2025)
+Intel,2021-12-25,121100,https://stockanalysis.com/stocks/intc/employees/,from stockanalysis (compiled from 10-K); likely includes Mobileye (basis verified only for 2025)
+Intel,2022-12-31,131900,https://stockanalysis.com/stocks/intc/employees/,from stockanalysis (compiled from 10-K); likely includes Mobileye (basis verified only for 2025)
+Intel,2023-12-30,124800,https://stockanalysis.com/stocks/intc/employees/,from stockanalysis (compiled from 10-K); likely includes Mobileye (basis verified only for 2025)
+Intel,2024-12-28,108900,https://www.sec.gov/Archives/edgar/data/50863/000005086325000009/intc-20241228.htm,"10-K: workforce 'comprised of 108,900 people as of December 28, 2024' (no footnote on Mobileye inclusion); matches stockanalysis"
+Intel,2025-12-27,85100,https://www.sec.gov/Archives/edgar/data/50863/000005086326000011/intc-20251227.htm,"10-K: 85,100 people as of Dec 27, 2025; footnote: includes core Intel workforce plus Mobileye and other subsidiaries; Altera majority stake was sold in 2025 so Altera staff are presumably excluded; matches stockanalysis"
+SAP,2018-12-31,96498,https://www.sec.gov/Archives/edgar/data/1000184/000110465920007820/a20-6013_1ex99d1.htm,"FTE at Dec 31 (SAP FY2019 results release, 6-K Ex.99.1, prior-year column); matches stockanalysis"
+SAP,2019-12-31,100330,https://www.sec.gov/Archives/edgar/data/1000184/000110465920007820/a20-6013_1ex99d1.htm,"FTE at Dec 31 (SAP FY2019 results release, 6-K Ex.99.1); matches stockanalysis"
+SAP,2020-12-31,102430,https://www.sap.com/integrated-reports/2024/en/datahub/social-data.html,FTE at year-end (SAP Integrated Report 2024 data hub; footnote: includes Qualtrics); matches stockanalysis
+SAP,2021-12-31,107415,https://www.sec.gov/Archives/edgar/data/1000184/000110465923007144/tm234497d1_ex99-1.htm,"FTE at Dec 31 as originally reported incl. Qualtrics (FY2022 results release, prior-year column); restated excl. Qualtrics = 102,658 FTE per SAP Integrated Report 2025 data hub; matches stockanalysis"
+SAP,2022-12-31,111961,https://www.sec.gov/Archives/edgar/data/1000184/000110465923007144/tm234497d1_ex99-1.htm,"FTE at Dec 31 as originally reported incl. Qualtrics (FY2022 results release); restated excl. Qualtrics = 106,312 FTE per SAP FY2023 results release and Integrated Report 2025; matches stockanalysis"
+SAP,2023-12-31,107602,https://www.sec.gov/Archives/edgar/data/1000184/000110465924006500/tm244006d1_ex99-1.htm,"FTE at Dec 31 (FY2023 results release, 6-K Ex.99.1; same in Integrated Report 2025 data hub); Qualtrics divested in 2023; matches stockanalysis"
+SAP,2024-12-31,109121,https://www.sap.com/integrated-reports/2025/en/datahub/social-data.html,"FTE at year-end (SAP Integrated Report 2025 data hub); MISMATCH: stockanalysis shows 109,973 which is year-end headcount (permanent 109,639 + temporary 334), not FTE"
+SAP,2025-12-31,110650,https://www.sap.com/integrated-reports/2025/en/datahub/social-data.html,"FTE at year-end (SAP Integrated Report 2025 data hub); MISMATCH: stockanalysis shows 111,397 which is year-end headcount (permanent 111,054 + temporary 343), not FTE"
+Salesforce,2018-01-31,29000,https://www.sec.gov/Archives/edgar/data/1108524/000110852418000011/crmq4fy1810-k.htm,"lower bound: 10-K says 'more than 29,000 employees' as of Jan 31, 2018; stockanalysis shows same value but dates it Jan 1, 2018"
+Salesforce,2019-01-31,35000,https://www.sec.gov/Archives/edgar/data/1108524/000110852419000009/crmq4fy1910-k.htm,"lower bound: 10-K says 'more than 35,000 employees' as of Jan 31, 2019; stockanalysis shows same value but dates it Jan 1, 2019"
+Salesforce,2020-01-31,49000,https://www.sec.gov/Archives/edgar/data/1108524/000110852420000014/crm-20200131.htm,"lower bound: 10-K says 'more than 49,000 employees' as of Jan 31, 2020; stockanalysis shows same value but dates it Jan 1, 2020"
+Salesforce,2021-01-31,56606,https://stockanalysis.com/stocks/crm/employees/,from stockanalysis (compiled from 10-K)
+Salesforce,2022-01-31,73541,https://stockanalysis.com/stocks/crm/employees/,from stockanalysis (compiled from 10-K)
+Salesforce,2023-01-31,79390,https://stockanalysis.com/stocks/crm/employees/,from stockanalysis (compiled from 10-K)
+Salesforce,2024-01-31,72682,https://stockanalysis.com/stocks/crm/employees/,from stockanalysis (compiled from 10-K)
+Salesforce,2025-01-31,76453,https://www.sec.gov/Archives/edgar/data/1108524/000110852425000006/crm-20250131.htm,"10-K: 'we had 76,453 employees'; matches stockanalysis"
+UiPath,2019-01-31,,,"no reliable figure found: pre-IPO year; S-1 gives headcount only for Jan 31, 2021 and stockanalysis does not list this year (UiPath changed FY end from Dec 31 to Jan 31 effective FY ended Jan 31, 2019, so no fiscal year ended in 2018)"
+UiPath,2020-01-31,,,"no reliable figure found: pre-IPO year; S-1 gives headcount only for Jan 31, 2021; stockanalysis does not list this year; no press-release figure dated to this year-end found"
+UiPath,2021-01-31,2863,https://ir.uipath.com/financials/sec-filings/content/0001193125-21-112457/0001193125-21-112457.pdf,"full-time employees; S-1/A (Apr 2021) PDF p.159: 'As of January 31, 2021, we had a total of 2,863 full-time employees' (same sentence in original S-1, confirmed via EDGAR full-text search); not listed on stockanalysis"
+UiPath,2022-01-31,4013,https://www.sec.gov/Archives/edgar/data/1734722/000173472222000006/path-20220131.htm,"full-time employees; 10-K: 'a total of 4,013 full-time employees'; matches stockanalysis"
+UiPath,2023-01-31,3833,https://stockanalysis.com/stocks/path/employees/,full-time employees; from stockanalysis (compiled from 10-K)
+UiPath,2024-01-31,4035,https://stockanalysis.com/stocks/path/employees/,full-time employees; from stockanalysis (compiled from 10-K)
+UiPath,2025-01-31,3868,https://www.sec.gov/Archives/edgar/data/1734722/000173472225000007/path-20250131.htm,"full-time employees; 10-K: 'a total of 3,868 full-time employees'; matches stockanalysis"
