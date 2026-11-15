@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+
+# Credentials
+.env
+
+# Personal data: scraped LinkedIn responses and everything derived from them
+# before pseudonymization. Only data/processed/ and the public sources are committed.
+data/raw/linkedin/
+data/interim/
+logs/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
