@@ -35,6 +35,7 @@ uv run pytest            # checks the dataset logic on hand-computed examples
 | 3. Parse profiles | `uv run extraction/parse_profiles.py` | `data/interim/{profiles,positions,educations}.csv` |
 | 4. Public data | `uv run extraction/fetch_public_data.py`, plus the layoffs.fyi CSV by hand | `data/raw/{eurostat,ins,layoffs}/` |
 | 5. Build dataset | `uv run extraction/build_dataset.py` | `data/processed/dataset.csv` |
+| 6. Descriptive figures | `uv run extraction/describe_dataset.py` | `docs/figures/*.png` |
 
 Steps 3 and 5 can be rerun at any time; they only read local files.
 
