@@ -1,4 +1,4 @@
-# job-change-prediction
+# Job Change Prediction Experiments
 
 Predicts whether a person working at a big tech company in Romania leaves their employer within the next 12 months.
 The dataset is built from public LinkedIn profiles collected with our own scraper, joined with layoff events
