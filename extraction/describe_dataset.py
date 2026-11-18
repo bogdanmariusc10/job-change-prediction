@@ -26,11 +26,12 @@ from common import INTERIM_DIR, PROFILE_URLS_CSV, RAW_DIR, ROOT_DIR, SCRAPE_STAT
 
 FIGURES_DIR = ROOT_DIR / "docs" / "figures"
 
-# Colors: blue is the data, gray is context ("stayed", small groups).
-SURFACE, INK, INK_2, MUTED = "#fcfcfb", "#0b0b0b", "#52514e", "#898781"
+# Colors: green is the data, gray is context ("stayed", small groups).
+SURFACE, INK, INK_2, MUTED = "#ffffff", "#0b0b0b", "#52514e", "#898781"
 GRID, AXIS = "#e1e0d9", "#c3c2b7"
-BLUE, GRAY = "#2a78d6", "#c3c2b7"
-DIVERGING = LinearSegmentedColormap.from_list("red_gray_blue", ["#b8312f", "#efa29e", "#f0efec", "#86b6ef", "#1c5cab"])
+ACCENT, GRAY = "#195d4d", "#c3c2b7"
+# Negative correlations orange-brown, positive green: a red-green pair would be hard to tell apart for colorblind readers.
+DIVERGING = LinearSegmentedColormap.from_list("orange_gray_green", ["#a8501f", "#e8b493", "#f0efec", "#9cc7ba", "#195d4d"])
 
 MIN_GROUP_ROWS = 50  # groups with fewer rows are drawn in gray (or folded into "Other")
 
@@ -90,7 +91,7 @@ def heading(fig, title: str, subtitle: str | None = None, note: str | None = Non
         fig.text(0, 0, note, transform=offset_copy(fig.transFigure, fig=fig, y=-6, units="points"), ha="left", va="top", fontsize=9.5, color=MUTED)
 
 
-def hbar(ax, labels: list[str], values: list[float], texts: list[str], colors: str | list[str] = BLUE, slots: int | None = None) -> None:
+def hbar(ax, labels: list[str], values: list[float], texts: list[str], colors: str | list[str] = ACCENT, slots: int | None = None) -> None:
     """Horizontal bars, first label on top, every bar labeled at its tip (so no value axis).
 
     slots fixes the number of bar positions, so panels with fewer categories keep the same bar thickness.
@@ -126,14 +127,14 @@ def segmented_bar(ax, parts: list[tuple[str, float, str, str]], total_label: str
 
 
 def boxes(ax, data: pd.DataFrame, column: str, title: str, percent: bool = False) -> None:
-    """Stayed (gray) vs left (blue): box = middle 50%, whiskers = 5th-95th percentile, line = median."""
+    """Stayed (gray) vs left (green): box = middle 50%, whiskers = 5th-95th percentile, line = median."""
     scale = 100 if percent else 1
     groups = [data.loc[data["left_12m"] == label, column].dropna() * scale for label in (0, 1)]
     plot = ax.boxplot(
         groups, positions=[0, 1], widths=0.42, whis=(5, 95), showfliers=False, patch_artist=True,
         medianprops={"color": INK, "linewidth": 2}, whiskerprops={"color": MUTED}, capprops={"color": MUTED},
     )  # fmt: skip
-    for patch, color in zip(plot["boxes"], (GRAY, BLUE)):
+    for patch, color in zip(plot["boxes"], (GRAY, ACCENT)):
         patch.set(facecolor=color, edgecolor=color)
     for x, values in enumerate(groups):
         median = values.median()
@@ -201,7 +202,7 @@ def fig_class_balance(d: pd.DataFrame) -> None:
         ax,
         [
             (f"Stayed for the next 12 months ({n - left:,} rows)", (n - left) / n, GRAY, INK),
-            (f"Left within 12 months ({left} rows, {people_left} people)", left / n, BLUE, "#ffffff"),
+            (f"Left within 12 months ({left} rows, {people_left} people)", left / n, ACCENT, "#ffffff"),
         ],
         f"{n:,} rows",
     )
@@ -217,7 +218,7 @@ def fig_rows_per_person(d: pd.DataFrame) -> None:
     per_person = d.groupby("person_id").size()
     counts = per_person.value_counts().reindex(range(1, per_person.max() + 1), fill_value=0)
     fig, ax = plt.subplots(figsize=(10, 4.2), layout="constrained")
-    ax.bar(counts.index, counts.values, width=0.6, color=BLUE)
+    ax.bar(counts.index, counts.values, width=0.6, color=ACCENT)
     peak = counts.idxmax()
     ax.text(peak, counts[peak], f"{counts[peak]} people", ha="center", va="bottom", fontsize=10, color=INK_2)
     ax.set_xticks(counts.index)
@@ -239,7 +240,7 @@ def fig_departures_over_time(d: pd.DataFrame) -> None:
     x = np.arange(len(by_t))
     fig, (top, bottom) = plt.subplots(2, 1, figsize=(8.4, 5.8), sharex=True, layout="constrained")
 
-    top.plot(x, rate, color=BLUE, lw=2, marker="o", ms=8, mec=SURFACE, mew=2, solid_capstyle="round")
+    top.plot(x, rate, color=ACCENT, lw=2, marker="o", ms=8, mec=SURFACE, mew=2, solid_capstyle="round")
     for i in {int(np.argmax(rate)), int(np.argmin(rate)), len(x) - 1}:
         top.annotate(f"{rate.iloc[i]:.1f}%", (x[i], rate.iloc[i]), xytext=(0, 9), textcoords="offset points", ha="center", fontsize=10, color=INK_2)
     top.set_ylim(0, rate.max() * 1.3)
@@ -316,7 +317,7 @@ def fig_leave_rate_by_group(d: pd.DataFrame) -> None:
         y = np.arange(len(stats))
         # Compared as printed, so a group shown as "5.0%" is never colored above an average shown as "5.0%".
         above = [round(rate, 1) > round(overall, 1) for rate in stats["rate"]]
-        ax.barh(y, stats["rate"], height=0.62, color=[BLUE if a else GRAY for a in above])
+        ax.barh(y, stats["rate"], height=0.62, color=[ACCENT if a else GRAY for a in above])
         for yi, rate in zip(y, stats["rate"]):
             # A surface-colored box keeps the average line from running through the label.
             ax.text(rate + top * 0.012, yi, f"{rate:.1f}%", va="center", ha="left", fontsize=10, color=INK_2, zorder=4,
@@ -334,7 +335,7 @@ def fig_leave_rate_by_group(d: pd.DataFrame) -> None:
         fig,
         "Departure rate by seniority, company, job family and region",
         "Share of rows in which the person left the company within the next 12 months. "
-        f"Blue: above the average of {overall:.1f}%.\nn = number of rows. Groups with fewer than {MIN_GROUP_ROWS} rows are left out.",
+        f"Green: above the average of {overall:.1f}%.\nn = number of rows. Groups with fewer than {MIN_GROUP_ROWS} rows are left out.",
     )
     save(fig, "06_leave_rate_by_group.png")
 
@@ -413,14 +414,14 @@ def fig_public_series() -> None:
     ):
         dates = frame["period"].map(month_start)
         keep = (dates >= start) & (dates <= end)
-        ax.plot(dates[keep], frame.loc[keep, "value"], color=BLUE, lw=2, marker="o" if ax is axes[1] else None, ms=5, mec=SURFACE, mew=1.5)
+        ax.plot(dates[keep], frame.loc[keep, "value"], color=ACCENT, lw=2, marker="o" if ax is axes[1] else None, ms=5, mec=SURFACE, mew=1.5)
         ax.grid(axis="y")
         ax.set_title(title, fontsize=11)
     if layoffs is not None:
         monthly = layoffs.dropna(subset=["month"]).groupby("month")["laid_off"].sum() / 1000
         dates = [pd.Timestamp(int(m) // 12, int(m) % 12 + 1, 1) for m in monthly.index]
         series = pd.Series(monthly.values, index=dates).loc[start:end]
-        axes[2].bar(series.index, series.values, width=20, color=BLUE)
+        axes[2].bar(series.index, series.values, width=20, color=ACCENT)
         axes[2].grid(axis="y")
         axes[2].set_title("Tech layoffs worldwide (thousands/month, layoffs.fyi)", fontsize=11)
     axes[2].set_xlim(start, end)
